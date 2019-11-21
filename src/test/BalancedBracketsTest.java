@@ -53,13 +53,12 @@ public class BalancedBracketsTest {
     //TestCase8:
     @Test
     public void unOrderedBracketsBtwnString() {
-        assertTrue(test_Class.hasBalancedBrackets("Launch]Code["));
+        assertFalse(test_Class.hasBalancedBrackets("Launch]Code["));
     }
     //TestCase9:
     @Test
     public void unorderedBrackets() {
-      //  assertFalse(test_Class.hasBalancedBrackets("]["));
-      assertTrue(test_Class.hasBalancedBrackets("]["));
+       assertFalse(test_Class.hasBalancedBrackets("]["));
     }
     //TestCase10 & 11:
     @Test
@@ -70,7 +69,7 @@ public class BalancedBracketsTest {
     //TestCase 12 & 13:
     @Test
     public void missingBracketPair() {
-        assertFalse(test_Class.hasBalancedBrackets("asdfs[sd]dsf["));
+        assertFalse(test_Class.hasBalancedBrackets("sd]dsf[gadg"));
         assertFalse(test_Class.hasBalancedBrackets("[sdfssd]dsf["));
     }
 
